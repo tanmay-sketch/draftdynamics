@@ -10,3 +10,14 @@ DraftDynamics is a Python-based tool designed to analyze sports draft pick trade
 - **Visualization**: Generate and compare Weibull value curves for different optimization methods.
 - **Flexible and Extendable**: Easily customize or expand for other sports or analysis scenarios.
 
+## Results
+
+A comparison of the Weibull curve with both L1 and L2 Norm:
+
+![Massey and Thaler Curve](massey_and_thaler_curve.png)
+
+
+This plot shows the confidence intervals for the Weibull curve parameters:
+
+![Confidence Interval Plot](ci_plot.png)
+
