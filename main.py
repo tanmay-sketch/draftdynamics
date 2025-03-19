@@ -20,7 +20,7 @@ def main(file_path, post_2013=False):
         mse_objective, 
         x0,
         args=(up_picks, down_picks),
-        method='Nelder-Mead',
+        method='L-BFGS-B',
         options=options
     )
     
@@ -28,7 +28,7 @@ def main(file_path, post_2013=False):
         mae_objective, 
         x0,
         args=(up_picks, down_picks),
-        method='Nelder-Mead',
+        method='L-BFGS-B',
         options=options
     )
     

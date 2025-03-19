@@ -67,7 +67,7 @@ def bootstrap_parameters(up_picks, down_picks, n_bootstrap=100):
             mse_objective, 
             x0,
             args=(boot_up_picks, boot_down_picks),
-            method='Nelder-Mead',
+            method='L-BFGS-B',
             options=options
         )
         
@@ -75,7 +75,7 @@ def bootstrap_parameters(up_picks, down_picks, n_bootstrap=100):
             mae_objective, 
             x0,
             args=(boot_up_picks, boot_down_picks),
-            method='Nelder-Mead',
+            method='L-BFGS-B',
             options=options
         )
         
