@@ -26,7 +26,7 @@ def plot_curves_with_ci(lambda_mse, beta_mse, lambda_mae, beta_mae,
     
     # Plot MSE curve and confidence interval
     plt.plot(picks, values_mse, 'b-', 
-            label=f'L2-Norm: λ={lambda_mse:.3f}, β={beta_mse:.3f}', 
+            label=f'MSE (L2-Norm): λ={lambda_mse:.3f}, β={beta_mse:.3f}', 
             linewidth=2)
     plt.fill_between(picks, mse_lower, mse_upper, 
                     color='blue', alpha=0.2, 
@@ -34,7 +34,7 @@ def plot_curves_with_ci(lambda_mse, beta_mse, lambda_mae, beta_mae,
     
     # Plot MAE curve and confidence interval
     plt.plot(picks, values_mae, 'r--', 
-            label=f'L1-Norm: λ={lambda_mae:.3f}, β={beta_mae:.3f}', 
+            label=f'MAE (L1-Norm): λ={lambda_mae:.3f}, β={beta_mae:.3f}', 
             linewidth=2)
     plt.fill_between(picks, mae_lower, mae_upper, 
                     color='red', alpha=0.2, 
@@ -60,12 +60,12 @@ def plot_curves_simple(lambda_mse, beta_mse, lambda_mae, beta_mae):
     
     # Plot MSE curve
     plt.plot(picks, values_mse, 'b-', 
-            label=f'L2-Norm: λ={lambda_mse:.3f}, β={beta_mse:.3f}', 
+            label=f'MSE (L2-Norm): λ={lambda_mse:.3f}, β={beta_mse:.3f}', 
             linewidth=2)
     
     # Plot MAE curve
     plt.plot(picks, values_mae, 'r--', 
-            label=f'L1-Norm: λ={lambda_mae:.3f}, β={beta_mae:.3f}', 
+            label=f'MSE (L1-Norm): λ={lambda_mae:.3f}, β={beta_mae:.3f}', 
             linewidth=2)
     
     plt.title('Draft Pick Value Curves: MSE vs MAE Optimization')
